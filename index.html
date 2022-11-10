@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
+    <title>Responsive Header</title>
+
+</head>
+
+<body>
+<header>
+    <div class="headerContainer">    
+        <div class="headerlogocont"><img class="headerlogo" src="img/apple-logo.png"></div>
+        <div class="MenuContainer">
+            <button class="button-23" role="button">Store</button>
+            <button class="button-23" role="button">Mac</button>
+            <button class="button-23" role="button">iPad</button>
+            <button class="button-23" role="button">iPhone</button>
+            <button class="button-23" role="button">Watch</button>
+            <button class="button-23" role="button">Airpods</button>
+            <button class="button-23" role="button">TV & Home</button>
+            <button class="button-23" role="button">Only on Apple</button>
+            <button class="button-23" role="button">Accessories</button>
+            <button class="button-23" role="button">Support</button>       
+        </div>
+        <div class="menustatecont"><img id="menustate" src="img/menustate.png"></div>
+    </div>
+    <div id="popup">
+        <div id="popup-content">
+            <div class="CloseCont"><img id="close" alt="close" src="img/close.png"></div>
+        <div class="popup-menu-container">
+            <ol>
+                <a href="index.html"><li>Store</li></a>
+                <a href="index.html"><li>Mac</li></a>
+                <a href="index.html"><li>iPad</li></a>
+                <a href="index.html"><li>iPhone</li></a>
+                <a href="index.html"><li>Watch</li></a>     
+                <a href="index.html"><li>Airpods</li></a>
+                <a href="index.html"><li>TV & Home</li></a>
+                <a href="index.html"><li>Only on Apple</li></a>
+                <a href="index.html"><li>Accessories</li></a>      
+                <a href="index.html"><li>Support</li></a>   
+            </ol>
+        </div>
+        </div>
+    </div>
+</header>
+
+<script>
+document.getElementById("menustate").addEventListener("click", function(){
+    
+    document.getElementById("popup").style.display = "flex";
+});
+
+document.getElementById("close").addEventListener("click", function(){
+    
+    document.getElementById("popup").style.display = "none";
+});
+</script>
+
+</body>
+</html>
